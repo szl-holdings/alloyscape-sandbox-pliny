@@ -1,0 +1,17 @@
+diff --git a/iris-agent.mjs b/iris-agent.mjs
+index 0000000..0000000 100644
+--- a/iris-agent.mjs
++++ b/iris-agent.mjs
+@@ -10,1 +10,2 @@
+ import { iris_lens } from "../forge/tools/iris_lens.mjs";
++import { image_gen } from "../forge/tools/image_gen.mjs";
+@@ -72,1 +73,1 @@
+-const TOOLS_LIST = [ ... ];   // (current list — image_gen absent)
++const TOOLS_LIST = [ ..., image_gen ];   // add image_gen alongside iris_lens
+
+NOTES (Pliny · 2026-09-30 23:00Z):
+- Verified this turn: `iris-agent.mjs` builds the toolbelt from TOOLS_LIST (line ~72, exported as IRIS_TOOL_NAMES); image_gen does NOT appear anywhere in iris-agent.mjs.
+- The import target exists and is the same file think-agent.mjs line 20 already imports: ../forge/tools/image_gen.mjs — precedent, not invention.
+- TOOLS_API_BASE maps name/description/input_schema straight off TOOLS_LIST — one line in the list is the whole wire.
+- pm2 restart iris-think --update-env after edit; VERIFY by having Iris draw one 1024 test image and report the returned path (proof, not presence).
+- No env/secrets touched. Reversible (single-line add; revert = remove line).

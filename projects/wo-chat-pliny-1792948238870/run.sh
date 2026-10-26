@@ -1,0 +1,27 @@
+#!/bin/bash
+set -euo pipefail
+set -euo pipefail
+ASK='Please check pm2 health status and prove disk free space on the workbench.'
+SEAT='pliny'
+HOST=$(hostname)
+NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+PM2_ONLINE=$(pm2 jlist 2>/dev/null | grep -o '"status":"online"' | wc -l | tr -d ' ' || echo 0)
+DF=$(df -h / | tail -1 | awk '{print $4" free on "$6}')
+{
+  echo "# RESULT — chat→workbench discipline"
+  echo
+  echo "seat: $SEAT"
+  echo "host: $HOST"
+  echo "when: $NOW"
+  echo "pm2_online: $PM2_ONLINE"
+  echo "disk: $DF"
+  echo
+  echo "## Rosa ask"
+  printf '%s\n' "$ASK"
+  echo
+  echo "## Discipline"
+  echo "Work ran on the workbench (not in Regular chat tools)."
+  echo "Verification ticket = this job folder + RESULT.md."
+  echo "EXECUTION_COMPLETE"
+} > RESULT.md
+test -s RESULT.md

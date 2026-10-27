@@ -1,0 +1,13 @@
+{
+  "type": "chat-workbench-discipline-v3-no-stubs",
+  "seat": "pliny",
+  "jobId": "wo-chat-pliny-1792994883156",
+  "status": "DONE",
+  "messageId": "1a176d2c00efb23e",
+  "reviewUrl": "https://alloyszlholdings.com/pliny/workbench/#job=wo-chat-pliny-1792994883156",
+  "conversationId": "rosa-with-pliny",
+  "ask": "Source\n/opt/alloyscape/ops/vigil-radar/STATUS.md (updated 2026-10-26T06:03:15Z) + live pm2\n\nWhat the Down-10 list actually is\n\n┌───────────┬───────────┬───────────┬───────────────┐\n│ Radar     │ Probe id  │ Exact pm2 │ Reality       │\n│ label     │           │ name      │               │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Blackbox  │ blackbox  │ missing   │ Live mouth is │\n│ G         │ -g        │           │ g-blackbox →  │\n│           │           │           │ online (id    │\n│           │           │           │ drift)        │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Commander │ commander │ missing   │ Probe hygiene │\n│ G         │ -g        │           │ / renamed G   │\n│           │           │           │ lane          │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Daddy G   │ daddy-g   │ missing   │ Live related: │\n│           │           │           │ g-lord-* →    │\n│           │           │           │ online        │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Nursery   │ nursery   │ missing   │ Not a live    │\n│           │           │           │ tribe mouth   │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Rosa      │ rosa      │ missing   │ You are not a │\n│           │           │           │ pm2 process   │\n│           │           │           │ named rosa    │\n├───────────┼───────────┼───────────┼───────────────┤\n│ The       │ the-      │ missing   │ Not a live    │\n│ Closer    │ closer    │           │ tribe mouth   │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Tribe     │ tribe     │ missing   │ No single     │\n│           │           │           │ process named │\n│           │           │           │ tribe (tribe- │\n│           │           │           │ chat/bus/etc. │\n│           │           │           │ are online)   │\n├───────────┼───────────┼───────────┼───────────────┤\n│ Quorum T  │ quorum-t  │ missing   │ quorum-t-     │\n│           │           │ as exact  │",
+  "noStubs": true,
+  "stubRejected": false,
+  "completedAt": "2026-10-26T06:08:06.102Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "chat-workbench-discipline-v3-no-stubs",
+  "seat": "pliny",
+  "jobId": "wo-chat-pliny-1792980187320",
+  "status": "DONE",
+  "messageId": "1a175f27fc0fa122",
+  "reviewUrl": "https://alloyszlholdings.com/pliny/workbench/#job=wo-chat-pliny-1792980187320",
+  "conversationId": "rosa-with-pliny",
+  "ask": "Rosa says:\nYOU DID AGAIN AEIGS GIVE ME A WHOLE REVIEW PLEASE DO NOT DO THAT",
+  "noStubs": true,
+  "stubRejected": false,
+  "completedAt": "2026-10-26T02:03:09.074Z"
+}

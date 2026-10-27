@@ -1,0 +1,40 @@
+#!/bin/bash
+set -euo pipefail
+set -euo pipefail
+SEAT='pliny'
+ASK='Source
+/opt/alloyscape/ops/vigil-radar/STATUS.md (updated 2026-10-26T06:03:15Z) + live pm2
+
+What the Down-10 list actually is
+
+┌───────────┬───────────┬───────────┬───────────────┐
+│ Radar     │ Probe id  │ Exact pm2 │ Reality       │
+│ label     │           │ name      │               │
+├───────────┼───────────┼───────────┼───────────────┤
+│ Blackbox  │ blackbox  │ missing   │ Live mouth is │
+│ G         │ -g        │           │ g-blackbox →  │
+│           │           │           │ online (id    │
+│           │           │           │ drift)        │
+├───────────┼───────────┼───────────┼───────────────┤
+│ Commander │ commander │ missing   │ Probe hygiene │
+│ G         │ -g        │           │ / renamed G   │
+│           │           │           │ lane          │
+├───────────┼───────────┼───────────┼───────────────┤
+│ Daddy G   │ daddy-g   │ missing   │ Live related: │
+│           │           │           │ g-lord-* →    │
+│           │           │           │ online        │
+├───────────┼───────────┼───────────┼───────────────┤
+│ Nursery   │ nursery   │ missing   │ Not a live    │
+│           │           │           │ tribe mouth   │
+├───────────┼───────────┼───────────┼───────────────┤
+│ Rosa      │ rosa      │ missing   │ You are not a │
+│           │           │           │ pm2 process   │
+│           │           │           │ named rosa    │
+├───────────┼───────────┼───────────┼───────────────┤
+│ The       │ the-      │ missing   │ Not a live    │
+│ Closer    │ closer   '
+bash /opt/alloyscape/ops/vigil/wb-real-work.sh "$SEAT" "$ASK" RESULT.md
+test -s RESULT.md
+grep -q '## Job class:' RESULT.md
+grep -q EXECUTION_COMPLETE RESULT.md
+if grep -q 'Verification ticket = this job folder' RESULT.md; then echo 'STUB_FORBIDDEN' >&2; exit 3; fi
